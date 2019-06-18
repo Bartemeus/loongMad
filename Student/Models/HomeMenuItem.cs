@@ -7,9 +7,11 @@ namespace Student.Models
     public enum MenuItemType
     {
         Browse,
+        Ads,
         Schedule,
         About,
-        Group,
+        Enrollee,
+        Student,
         Login
     }
     public class HomeMenuItem

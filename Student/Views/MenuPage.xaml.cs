@@ -19,19 +19,13 @@ namespace Student.Views
             menuItems = new List<HomeMenuItem>
             {
                 new HomeMenuItem {Id = MenuItemType.Browse, Title="Новости" },
+                new HomeMenuItem { Id = MenuItemType.Ads, Title = "Объявления" },
+                new HomeMenuItem { Id = MenuItemType.Enrollee, Title = "Абитуриенту" },
+                new HomeMenuItem { Id = MenuItemType.Student, Title = "Студенту" },
                 new HomeMenuItem { Id = MenuItemType.Schedule, Title = "Расписание" },
-                new HomeMenuItem { Id = MenuItemType.Group, Title = "Группы" },
+                new HomeMenuItem { Id = MenuItemType.About, Title = "Контакты" },
+                new HomeMenuItem { Id = MenuItemType.Login, Title = "Ссылки" }
             };
-            if (menuItems.Count == 2)
-            {
-                menuItems.Add(
-                new HomeMenuItem { Id = MenuItemType.About, Title = "О программе" }
-                    );
-            }
-
-            menuItems.Add(
-                new HomeMenuItem { Id = MenuItemType.Login, Title = "Вход" }
-                    );
 
             ListViewMenu.ItemsSource = menuItems;
 

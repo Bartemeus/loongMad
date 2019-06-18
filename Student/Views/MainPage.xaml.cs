@@ -39,9 +39,16 @@ namespace Student.Views
                     case (int)MenuItemType.Schedule:
                         MenuPages.Add(id, new NavigationPage(new SchedulePage()));
                         break;
-                    case (int)MenuItemType.Group:
+                    case (int)MenuItemType.Ads:
+                        MenuPages.Add(id, new NavigationPage(new ItemsPage()));
+                        break;
+                    case (int)MenuItemType.Enrollee:
                         MenuPages.Add(id, new NavigationPage(new GroupPage()));
                         break;
+                    case (int)MenuItemType.Student:
+                        MenuPages.Add(id, new NavigationPage(new GroupPage()));
+                        break;
+
                 }
             }
 
